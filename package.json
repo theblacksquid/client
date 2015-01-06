@@ -1,0 +1,31 @@
+{
+  "name": "WebStalker",
+  "version": "0.0.1",
+  "description": "An Angular node-webkit application",
+  "main": "index.html",
+  "private": true,
+  "keywords": [
+    "node",
+    "webkit",
+    "win",
+    "osx"
+  ],
+  "window": {
+    "toolbar": true,
+    "resizable": true,
+    "width": 1000,
+    "height": 600,
+    "min_width": 600,
+    "min_height": 400,
+    "position": "center"
+  },
+  "author": "Regan Lawton",
+  "license": "MIT",
+  "dependencies": {
+    "angular": "~1.3.0",
+    "angular-mocks": "~1.3.0",
+    "angular-route": "~1.3.0",
+    "bootstrap": "~3.1.1",
+    "jquery": "2.1.1"
+  }
+}
