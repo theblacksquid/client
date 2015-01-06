@@ -1,2 +1,2 @@
-client
+OpenBazaar Client and Tools
 ======
