@@ -17,7 +17,7 @@ app.config(['$routeProvider', function ($routeProvider) {
     $routeProvider
         // Home
         .when("/", {templateUrl: "views/home.html", controller: "homeCtrl"})
-        .when("#/buy", {templateUrl: "views/buy.html", controller: "buyCtrl"})
+        .when("/buy", {templateUrl: "views/buy.html", controller: "buyCtrl"})
         .when("/sell", {templateUrl: "views/sell.html", controller: "sellCtrl"})
         .when("/tools", {templateUrl: "views/tools.html", controller: "toolsCtrl"})
         .when("/settings", {templateUrl: "views/settings.html", controller: "settingsCtrl"})
