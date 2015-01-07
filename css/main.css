@@ -3,6 +3,19 @@
   float: right;
   margin-top: 18px; }
 
+.main-logo {
+  max-height: 15%;
+  max-width: 15%; }
+
+.footer-logo {
+  margin-bottom: 15px;
+  max-height: 15%;
+  max-width: 15%; }
+
+.footer-links > li {
+  display: inline;
+  margin-left: 5px; }
+
 /*! normalize.css v3.0.2 | MIT License | git.io/normalize */
 html {
   font-family: sans-serif;
@@ -3491,7 +3504,7 @@ tbody.collapse.in {
   padding: 9px 10px;
   margin-top: 8px;
   margin-bottom: 8px;
-  background-color: transparent;
+  background-color: #D6D6D6;
   background-image: none;
   border: 1px solid transparent;
   border-radius: 4px; }
