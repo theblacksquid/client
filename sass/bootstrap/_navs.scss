@@ -10,20 +10,26 @@
   margin-bottom: 0;
   padding-left: 0; // Override default ul/ol
   list-style: none;
+  
   @include clearfix;
 
   > li {
     position: relative;
     display: block;
-
+    margin-top: 5px;
     > a {
       position: relative;
       display: block;
-      padding: $nav-link-padding;
+      font-size: 15px;
+      color: #B3B3B3;
+      padding: 10px 35px;
       &:hover,
       &:focus {
         text-decoration: none;
-        background-color: $nav-link-hover-bg;
+        background-color: #ffffff;
+        color: #828282;
+        border-bottom: 1px solid #0D74DB;
+        padding-bottom: 23px;
       }
     }
 
