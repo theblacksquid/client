@@ -1,0 +1,95 @@
+<script type="text/template" id="alert">
+  <div class="alert alert-{type} alert-dismissible fade in" role="alert">
+    <button type="button" class="close" data-dismiss="alert"><span aria-hidden="true">×</span><span class="sr-only">Close</span></button>
+    {message}
+  </div>
+</script>
+
+<script type="text/template" id="template_contract_editor">
+  <div id="editor-notification"></div>
+  <ul id="editorTab" class="nav nav-tabs" role="tablist">
+    <li role="presentation">
+      <a href="#editor" id="editor-tab" data-toggle="tab">Editor</a>
+    </li>
+    <li role="presentation">
+      <a href="#contract" id="contract-tab" data-toggle="tab">Signed Contract</a>
+    </li>
+  </ul>
+  <div id="editorTabContent" class="tab-content">
+    <div role="tabpanel" class="tab-pane fade" id="editor" aria-labelledby="editor-tab">
+      <!--<h3 class="text-center">Contract</h3>-->
+      <form id="form_gen_fields" class="form-horizontal" role="form">
+
+      </form>
+      <div class="btn-group">
+        <button type="button" onclick="app.forms.validate_contract()" class="btn btn-default">Validate</button>
+        <button type="button" onclick="app.forms.save_draft_dialog()" class="btn btn-default">Save as draft</button>
+        <button type="button" onclick="app.forms.sign_contract()" class="btn btn-default">Sign</button>
+      </div>
+    </div>
+    <div role="tabpanel" class="tab-pane fade" id="contract" aria-labelledby="contract-tab">
+      <pre id="xml_contract">Sign a contract from the editor tab to see it here.</pre>
+      <div class="btn-group">
+        <button type="button" onclick="app.forms.save_signed_contract_dialog()" class="btn btn-default disabled"
+                id="save_signed_btn">Save signed contract
+        </button>
+      </div>
+    </div>
+  </div>
+
+</script>
+<script type="text/template" id="form_input_template_text">
+  <div data-type="{datatype}" data-prop="{prop}" data-toggle='tooltip' class="form-group" title="{tooltip}">
+    <label for="{field_id}" class="col-sm-4 control-label">{fieldname}</label>
+
+    <div class="col-sm-5">
+      <input type="{fieldtype}" onchange="app.forms.data_change($(this));" class="form-control form_gen_input"
+             name="gen_input_field[]" id="{field_id}">
+    </div>
+  </div>
+</script>
+
+<script type="text/template" id="form_input_template_hidden">
+  <div data-type="{datatype}" data-prop="{prop}" data-toggle='tooltip' class="form-group" title="{tooltip}">
+    <label for="{field_id}" class="col-sm-4 control-label">{fieldname}</label>
+
+    <div class="col-sm-5">
+      <pre id="{field_id}_text"></pre>
+    </div>
+    <input type="hidden" id="{field_id}">
+  </div>
+</script>
+
+<div class="container view-space">
+
+  <div class="row">
+
+    <div class="col-md-12">
+      <h1 class=" text-center">Contract Generator</h1>
+
+
+      <div class="row">
+        <div class="col-sm-4">
+          <div class="btn-group">
+            <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown">
+              New Contract <span class="caret"></span>
+            </button>
+            <ul id="new_contract_menu" class="dropdown-menu" role="menu">
+
+            </ul>
+          </div>
+          <h3 class="">Signed Contracts</h3>
+          <ul id="signed_contract_list" class="nav nav-pills nav-stacked">
+          </ul>
+          <h3 class="">Draft Contracts</h3>
+          <ul id="draft_contract_list" class="nav nav-pills nav-stacked">
+          </ul>
+        </div>
+        <div id="contract_editor" class="col-sm-8">
+        </div>
+
+      </div>
+
+    </div>
+  </div>
+</div>
