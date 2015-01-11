@@ -1,28 +1,70 @@
 @import "bootstrap";
 
+nav {
+  background: #ffffff;
+
+  .sub_menu {
+    background: #F1F0F0;
+    width: 100%;
+    position: absolute;
+    top: 100%;
+    margin: 1px 0 0 0;
+
+    ul {
+      list-style: none;
+      display: block;
+      float: left;
+      padding: 0;
+      width: 100%;
+
+      li {
+        float: left;
+        display: block;
+
+        a {
+          display: block;
+          font-size: 14px;
+          color: #C1C1C1;
+          padding: 15px 27px;
+
+          &:hover, &:focus {
+            color: #222222;
+          }
+        }
+
+        &:first-of-type {
+          a {
+            padding-left: 0;
+          }
+        }
+      }
+    }
+  }
+}
+
 .setting {
-    float: right;
-    margin-top: 18px;
+  float: right;
+  margin-top: 18px;
 }
 
 .main-logo {
-    max-height: 15%;
-    max-width: 15%;
+  max-height: 15%;
+  max-width: 15%;
 }
 
 .footer-logo {
-    margin-bottom: 15px;
-    max-height: 15%;
-    max-width: 15%;
+  margin-bottom: 15px;
+  max-height: 15%;
+  max-width: 15%;
 }
 
 .footer-links {
-    
-    > ul {
-    }
-    
-    > li {
-        display: inline;
-        margin-left: 5px;
-    }
+
+  > ul {
+  }
+
+  > li {
+    display: inline;
+    margin-left: 5px;
+  }
 }

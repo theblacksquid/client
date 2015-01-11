@@ -24,7 +24,7 @@
     <!-- Vendor: Javascripts -->
     <script src="js/vendors/jquery.min.js"></script>
     <script src="js/vendors/bootstrap.js"></script>
-    <script src="js/vedors/openpgp.min.js"></script>
+    <script src="js/vendors/openpgp.min.js"></script>
 
     <!-- Vendor: Angular, followed by our custom scripts -->
     <script src="js/vendors/angular.js"></script>
@@ -35,7 +35,10 @@
 
     <!-- Controllers -->
     <script src="controllers/home.js"></script>
-
+    <script src="controllers/buy.js"></script>
+    <script src="controllers/sell.js"></script>
+    <script src="controllers/tools.js"></script>
+    <script src="controllers/settings.js"></script>
 
 </head>
 <body ng-app="mainApp">
@@ -44,7 +47,6 @@
 <div ng-include='"views/_header.html"'></div>
 <div ng-view></div>
 <div ng-include='"views/_footer.html"'></div>
-
 
 </body>
 </html>
