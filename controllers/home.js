@@ -3,7 +3,7 @@
  * @author Regan Lawton <reganlawton92@gmail.com>
  */
 
-app.controller('homeCtrl', function ($scope, $location, $http) {
+app.controller('homeCtrl', function ($rootScope, $scope, $location, $http) {
 
     $scope.save = function() {
 

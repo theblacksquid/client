@@ -1,0 +1,32 @@
+<div class="container view-space">
+
+  <div class="row">
+
+    <div class="col-md-12">
+      <h1>Options</h1>
+
+      <p>Please configure the options as you see fit, All options are stored using HTML5 access to local storage.</p>
+
+      <p>To reset all options to the defaults, and delete the stored keypairs, please <b>doubleclick</b> the "clear
+        local storage" button</p>
+
+      <form class="form-horizontal">
+        <div class="form-group">
+          <label for="option_contract_format" class="col-sm-6 control-label">Set a PGP key pair</label>
+
+          <div class="col-sm-6">
+            <button type="button" class="btn btn-warning" onclick="app.pgp.show_upload_modal()">Upload</button>
+          </div>
+        </div>
+        <div class="form-group">
+          <label for="option_contract_format" class="col-sm-6 control-label">Clear Local storage</label>
+
+          <div class="col-sm-6">
+            <button type="button" class="btn btn-danger" ondblclick="localStorage.clear();location.reload();">Delete
+            </button>
+          </div>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>

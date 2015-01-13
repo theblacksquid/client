@@ -3,7 +3,7 @@
  * @author Regan Lawton <reganlawton92@gmail.com>
  */
 
-app.controller('settingsCtrl', function ($rootScope, $scope, $location, $http) {
+app.controller('sellCtrl', function ($rootScope, $scope, $location, $http) {
 
     $scope.save = function() {
 
